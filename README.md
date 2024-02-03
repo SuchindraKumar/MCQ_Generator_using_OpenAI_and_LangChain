@@ -37,7 +37,7 @@ streamlit run StreamlitAPP.py
 # Now,
 
 ```bash
-Open Up Your local-host and Port
+Open Up Your local-host and Port No. 8501
 ```
 
 # For AWS Deployment Follow the Steps
