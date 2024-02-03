@@ -1,2 +1,6 @@
 env
+logs
+mcqgenrator.egg-info
+build
+dist
 .env
