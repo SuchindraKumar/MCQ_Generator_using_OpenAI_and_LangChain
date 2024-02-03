@@ -5,7 +5,7 @@
 Clone the Repository
 
 ```bash
-https://github.com/SuchindraKumar/MCQ_Generator_using_OpenAI_and_LangChain.git
+git clone https://github.com/SuchindraKumar/MCQ_Generator_using_OpenAI_and_LangChain.git
 ```
 ### STEP 01- Create a Conda Environment after Opening the Repository
 
@@ -42,13 +42,13 @@ Open Up Your local-host and Port
 
 ### 1.first login to the AWS: https://aws.amazon.com/console/
 
-### 2.search about the EC2
+### 2.Search about the EC2
 
-### 3.you need to config the UBUNTU Machine
+### 3.You need to config the UBUNTU Machine
 
-### 4.launch the instance
+### 4.Launch the instance
 
-### 5.update the machine and  Run the Following Commmands:
+### 5.Update the machine Run the Following Commmands:
 
 ```
 sudo apt update
@@ -63,20 +63,48 @@ sudo apt upgrade -y
 sudo apt install git curl unzip tar make sudo vim wget -y
 ```
 ```
-git clone "Your-repository"
+git clone "Your-Repository"
 ```
 ```
 sudo apt install python3-pip
+
 ```
+For Checking All the File Present In Our Machine
+```
+ls
+```
+Enter In Your Project Directory(MCQ_Generator_using_OpenAI_and_LangChain):
+```
+cd MCQ_Generator_using_OpenAI_and_LangChain
+```
+
 ```
 pip3 install -r requirements.txt
 ```
-```
-python3 -m streamlit run StreamlitAPP.py
-```
+
 
 ### If You want to Add OpenAI API Key:
 
-1. create .env file in your server touch .env
-2. vi .env #press insert #copy your api key and paste it there #press and then :wq and hit enter
-3. go with security and add the inbound rule add the port 8501
+1. create .env file in your server
+ ```
+   touch .env
+   ```
+2.For Opening .env File:
+```
+ vi .env
+```
+3. Press insert :
+```
+ Copy your OpenAI API key and paste it there
+```
+
+5. Press ***Esc*** and then ***:wq*** and Hit Enter
+
+6. Go with Security and Add the Inbound Rule:
+ ```  
+ Add the port 8501
+```
+For Run The App:
+ ```
+python3 -m streamlit run StreamlitAPP.py
+```
