@@ -13,14 +13,14 @@ def read_file(file):
             return text
             
         except Exception as e:
-            raise Exception("error reading the PDF file")
+            raise Exception("Error in Reading the PDF file")
         
     elif file.name.endswith(".txt"):
         return file.read().decode("utf-8")
     
     else:
         raise Exception(
-            "unsupported file format only pdf and text file suppoted"
+            "Unsupported File Format Only PDF and Text File Suppoted"
             )
 
 def get_table_data(quiz_str):
