@@ -1,4 +1,6 @@
-# How to Run ?
+# End To End MCQs Creator Application with LangChain 🦜⛓️  Project
+
+## How to Run ?
 
 ### STEPS:
 
