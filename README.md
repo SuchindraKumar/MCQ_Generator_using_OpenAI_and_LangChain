@@ -5,7 +5,7 @@
 Clone the Repository
 
 ```bash
-git clone https://github.com/SuchindraKumar/Text-Summarizer-Project.git
+https://github.com/SuchindraKumar/MCQ_Generator_using_OpenAI_and_LangChain.git
 ```
 ### STEP 01- Create a Conda Environment after Opening the Repository
 
