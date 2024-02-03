@@ -69,10 +69,18 @@ with st.form("user_inputs"):
                         table_data=get_table_data(quiz)
                         if table_data is not None:
                             df=pd.DataFrame(table_data)
+                            df.columns = ["Question", "Options", "Correct Answer"]
                             df.index=df.index+1
                             st.table(df)
                             # Display the Review in a Text Box as well
                             st.text_area(label="Review", value=response["review"])
+                            # Add download button
+                            csv = df.to_csv(index=False)
+                            st.download_button(
+                                label="Download CSV",
+                                data=csv,
+                                file_name='generated_mcqs.csv',
+                                mime='text/csv')
                         else:
                             st.error("Error in the Table Data")
 
